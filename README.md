@@ -9,16 +9,12 @@ Small C project that generates and displays a decorated ASCII fir tree in the te
 - Colored output (via cursor control)
 - Modular structure (generate, init, decorate, display)
 
----
-
 ## Project Structure
 src/
 ├── main.c
 ├── Fir_tree.h
 ├── Cursor.h
 ├── Configuration.h
-
----
 
 ## Terminal
 - mkdir "code name" && cd "code name"
