@@ -17,16 +17,31 @@ src/
 ├── Configuration.h
 
 ## Terminal
-- mkdir "code name" && cd "code name"
-- git clone https://github.com/beaurel2/Fir-Tree-with-C-Programm.git
-- cd Fir_tree && make
+```bash
+$ mkdir "code name" && cd "code name"
+$ git clone https://github.com/beaurel2/Fir-Tree-with-C-Programm.git
+$ cd Fir_tree && make
+```
 
 If everything is OK, then I get the output on the terminal:
-![alt text](image.png)
+```bash
+$ gcc -Wall -Wextra -Werror -std=c11   -c -o src/main.o src/main.c
+$ gcc -Wall -Wextra -Werror -std=c11 -o fir_tree src/main.o
+```
 
-- If you change anything in the code, always please run <make clean> before <make>.
-- then use the command <./fir_tree> to run the code
+If you change anything in the code, always please run:
+```bash 
+$ make clean
+$ make
+```
 
-If you're on Windows, then use the WSL command
-- wsl --install
-- sudo apt install build-essential
+then use this command to run the code:
+```bash
+$ ./fir_tree
+```
+
+If you're on Windows, then use the WSL command:
+```bash
+$ wsl --install
+$ sudo apt install build-essential
+```

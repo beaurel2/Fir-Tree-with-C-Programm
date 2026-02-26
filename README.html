@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -58,18 +93,22 @@ ul.task-list li input[type="checkbox"] {
 <li>Colored output (via cursor control)</li>
 <li>Modular structure (generate, init, decorate, display)</li>
 </ul>
-<hr>
 </section>
 <section id="project-structure" class="level2">
 <h2 class="anchored" data-anchor-id="project-structure">Project Structure</h2>
 <p>src/ ├── main.c ├── Fir_tree.h ├── Cursor.h ├── Configuration.h</p>
-<hr>
 </section>
 <section id="terminal" class="level2">
 <h2 class="anchored" data-anchor-id="terminal">Terminal</h2>
-<p>mkdir ‘code name’ &amp;&amp; cd ‘code name’ git clone https://github.com/beaurel2/Fir-Tree-with-C-Programm.git cd Fir_tree &amp;&amp; make</p>
-<p>If everything is OK, then I get the output on the terminal: - gcc -Wall -Wextra -Werror -std=c11 -c -o src/main.o src/main.c - gcc -Wall -Wextra -Werror -std=c11 -o fir_tree src/main.o <img src="image.png" class="img-fluid" alt="alt text"></p>
-<p>If you change anything in the code, always please run <make clean=""> before <make>. then use the command &lt;./fir_tree&gt; to run the code</make></make></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> mkdir <span class="st">"code name"</span> <span class="kw">&amp;&amp;</span> <span class="bu">cd</span> <span class="st">"code name"</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git clone https://github.com/beaurel2/Fir-Tree-with-C-Programm.git</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> cd Fir_tree <span class="kw">&amp;&amp;</span> <span class="fu">make</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>If everything is OK, then I get the output on the terminal: <img src="image.png" class="img-fluid" alt="alt text"></p>
+<ul>
+<li>If you change anything in the code, always please run <make clean=""> before <make>.</make></make></li>
+<li>then use the command &lt;./fir_tree&gt; to run the code</li>
+</ul>
+<p>If you’re on Windows, then use the WSL command - wsl –install - sudo apt install build-essential</p>
 </section>
 </section>
 
