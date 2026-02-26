@@ -25,7 +25,7 @@ $ cd Fir_tree && make
 
 If everything is OK, then I get the output on the terminal:
 ```bash
-$ gcc -Wall -Wextra -Werror -std=c11   -c -o src/main.o src/main.c
+$ gcc -Wall -Wextra -Werror -std=c11 -c -o src/main.o src/main.c
 $ gcc -Wall -Wextra -Werror -std=c11 -o fir_tree src/main.o
 ```
 
