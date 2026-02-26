@@ -1,4 +1,4 @@
-# 🎄 ASCII Fir Tree Generator (C)
+# 4 mini projects
 
 Four small projects, and each of these projects must print something on the console if everything is okay. You need to pay attention to a good IDE, compiler, etc.
 
@@ -10,11 +10,11 @@ Four small projects, and each of these projects must print something on the cons
 - Modular structure (generate, init, decorate, display)
 
 ## Project Structure
-src/
-├── main.c
-├── Fir_tree.h
-├── Cursor.h
-├── Configuration.h
+- header file (.h)
+- source file (.c)
+- Makefile 
+
+Each code can be executed either on a Linux command line (make) or Windows (gcc) via a Terminal or in an IDE (Eclipse, VS Code, Code 22, Code::Blocks).
 
 ## Terminal
 ```bash
