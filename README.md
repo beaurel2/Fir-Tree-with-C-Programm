@@ -1,2 +1,19 @@
-# Fir-Tree-with-C-Programm
-In this mini project, I am programming a Christmas tree. The Christmas tree is generated using a function and displayed in color on the console. Afterwards, the tree is randomly decorated and displayed on the console again.
+# 🎄 ASCII Fir Tree Generator (C)
+
+Small C project that generates and displays a decorated ASCII fir tree in the terminal.
+
+## Features
+
+- Dynamic tree size (width & height)
+- Random decoration
+- Colored output (via cursor control)
+- Modular structure (generate, init, decorate, display)
+
+---
+
+## Project Structure
+src/
+├── main.c
+├── Fir_tree.h
+├── Cursor.h
+├── Configuration.h
